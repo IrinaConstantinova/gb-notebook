@@ -46,9 +46,10 @@ public class UserView {
                 case DELETE:
                     userId = prompt("Enter user id: ");
                     userController.deleteUser(userId);
+                case LIST:
+                    System.out.println("Список всех команд: ");
+                    userController.viewAllCommands();
 
-//                default:
-//                    System.out.println("Такой команды не существует. Введите другую команду");
 
             }
         }

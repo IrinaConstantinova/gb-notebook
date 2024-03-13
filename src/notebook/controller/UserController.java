@@ -2,6 +2,7 @@ package notebook.controller;
 
 import notebook.model.User;
 import notebook.model.repository.GBRepository;
+import notebook.util.Commands;
 
 import java.util.List;
 import java.util.Objects;
@@ -40,4 +41,11 @@ public class UserController {
     public List<User> readAll(){
        return repository.findAll();
     }
+
+    public void viewAllCommands(){
+        repository.getAllCommands();
+
+    }
+
+
 }

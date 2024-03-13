@@ -1,6 +1,7 @@
 package notebook.model.repository;
 
 import notebook.model.User;
+import notebook.util.Commands;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,4 +14,5 @@ public interface GBRepository {
     boolean delete(Long id);
     List<String> readAll();
     void saveAll(List<String> data);
+    void getAllCommands();
 }

@@ -1,6 +1,7 @@
 package notebook.model.repository.impl;
 
 
+import notebook.util.Commands;
 import notebook.util.DBConnector;
 import notebook.util.mapper.impl.UserMapper;
 import notebook.model.User;
@@ -135,5 +136,13 @@ public class UserRepository implements GBRepository {
             System.out.println(e.getMessage());
         }
     }
+
+    @Override
+    public void getAllCommands() {
+        for (Commands com : Commands.values()){
+            System.out.println(com);
+        }
+    }
+
 
 }
